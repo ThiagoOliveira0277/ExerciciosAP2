@@ -1,0 +1,30 @@
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author thiag
+ */
+public class Exercicio8 {
+    public static void main (String args[]){
+        int e, vb, vn, vv;
+        e = Integer.parseInt(JOptionPane.showInputDialog("Digite quantos eleitores há nesse municipio:"));
+        vb = Integer.parseInt(JOptionPane.showInputDialog("Digite o numero de  votos brancos: "));
+        vn = Integer.parseInt(JOptionPane.showInputDialog("Digite o numero de votos nulos:"));
+        vv = Integer.parseInt(JOptionPane.showInputDialog("Digite o numero de votos validos:"));
+        
+        
+        
+        if(e==vb+vn+vv){
+        vb = vb * 100 / e ;
+        vn = vn * 100 / e ;
+        vv = vv * 100 / e;
+            JOptionPane.showMessageDialog(null, "O percentual de elietores com voto branco é: "+vb+"%"
+            + "\n O percentual de eleitores com voto nulo é: "+vn+"%"
+                    + "\n O percentual de eleitores com voto valido é: "+vv+"%");
+        }
+            else{
+                    JOptionPane.showMessageDialog(null, "Os numeros inseridos nos campos de votos não conrresponde ao total de eleitores.");
+                    }
+        
+    }
+    
+}
