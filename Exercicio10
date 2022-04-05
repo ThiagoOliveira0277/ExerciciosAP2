@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author thiag
+ */
+public class Exercicio10 {
+    public static void main (String args []){
+        double f;
+        f = Double.parseDouble(JOptionPane.showInputDialog("Digite o custo de fabrica do carro: \n (Sem pontos e sem virgulas!)"));
+        double cd = f * 28 / 100;
+        double ci = f * 45 / 100;
+        double cfc = f + cd + ci;
+        JOptionPane.showMessageDialog(null, "O custo final ao consumidor sera de: "+cfc+" reais");
+    }
+    
+}
