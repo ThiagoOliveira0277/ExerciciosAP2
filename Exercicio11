@@ -1,0 +1,19 @@
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author thiag
+ */
+public class Exercicio11 {
+    public static void main (String args []){
+        double cv, vtv, sf, vcv;
+        cv = Double.parseDouble(JOptionPane.showInputDialog("Digite o numero de carros vendidos: "));
+        vtv = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor total das vendas; "));
+        sf = Double.parseDouble(JOptionPane.showInputDialog("Digite o salario fixo: "));
+        vcv = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor recebido por carro vedido: "));
+        double vdc = vtv * 5 / 100;
+        cv = cv * vcv;
+        double sfv = cv + vdc + sf;
+        JOptionPane.showMessageDialog(null, "O salario final do vendedor é de: "+sfv+" reais ");
+    } 
+    
+}
