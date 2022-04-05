@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author thiag
+ */
+public class Exercicio9 {
+    public static void main (String args[]){
+     double s, r;
+     s = Double.parseDouble(JOptionPane.showInputDialog("Digite o seu salario: "));
+     r = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do reajuste: "));
+     double nv = s * r / 100;
+     s = nv + s;
+     JOptionPane.showMessageDialog(null, "Seu novo salario é de: "+s+" reais");
+    }
+    
+}
