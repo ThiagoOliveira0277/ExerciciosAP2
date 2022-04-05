@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author thiag
+ */
+public class Exercicio4 {
+    public static void main(String[] args) {
+        int vi;
+        vi = Integer.parseInt(JOptionPane.showInputDialog("Digite um valor inteiro:"));
+        vi = vi - 1;
+        
+        JOptionPane.showMessageDialog(null, "O antecessor do valor digitado é: "+ vi);
+        
+        
+    }
+    
+} 
