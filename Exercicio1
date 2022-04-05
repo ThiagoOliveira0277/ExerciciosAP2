@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author thiag
+ */
+public class Exercicio1 {
+    public static void main(String[] args) {
+        double c = 5.0;
+        double v;
+        v = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor em dolares:"));
+        v = v * c;
+        JOptionPane.showMessageDialog(null, "O valor digitado em reais é:"+v);
+        
+    }
+    
+}
