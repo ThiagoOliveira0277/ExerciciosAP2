@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author thiag
+ */
+public class Exercicio3 {
+    public static void main(String[] args) {
+        double vp , qp;
+         vp = Double.parseDouble(JOptionPane.showInputDialog("Qual o valor da peça?"));
+         qp = Double.parseDouble(JOptionPane.showInputDialog("Qual a quantidade de peças?"));
+         
+         double vt = vp * qp;
+         double cm = vt * 5 / 100;
+         
+         JOptionPane.showMessageDialog(null, "Sua comissão é de: "+cm);
+    }
+}
