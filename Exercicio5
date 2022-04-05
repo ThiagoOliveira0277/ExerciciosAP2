@@ -1,0 +1,15 @@
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author thiag
+ */
+public class Exercicio5 {
+    public static void main(String[] args) {
+        float b, a;
+        b = Float.parseFloat(JOptionPane.showInputDialog("Digite o valor da base do retangulo: "));
+        a = Float.parseFloat(JOptionPane.showInputDialog("Digite o valor da altura do retangulo:"));
+        double c = b*a;
+        JOptionPane.showMessageDialog(null, "A area desse retangulo é: "+ c);
+    }
+    
+}
