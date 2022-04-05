@@ -1,0 +1,19 @@
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author thiag
+ */
+public class Exercicio7 {
+    public static void main (String args[]){
+        int d, m, a;
+        a = Integer.parseInt(JOptionPane.showInputDialog("Digite a sua idade:"));
+        m = Integer.parseInt(JOptionPane.showInputDialog("Digite os meses da sua idade: \n Exemplo:(24 anos e 5 meses porem eu quero saber só os meses ok?)"));
+        d = Integer.parseInt(JOptionPane.showInputDialog("Digite os dias da sua idade: \n Exemplo:(24 anos, 5 meses e 3 dias, porem eu quero saber só os dias ok?"));
+        a = a*365;
+        m = m*30;
+        d = d+a+m;
+        JOptionPane.showMessageDialog(null, "Voce tem exatamente "+d+" dias de vida.");
+        
+    }
+    
+}
